@@ -121,12 +121,10 @@ class LoginScreen: UIView {
     }
     
     @objc private func tappedLoginButton() {
-        print("Botão de Login foi pressionado.")
         self.delegate?.actionLoginButton()
     }
     
     @objc private func tappedRegisterButton() {
-        print("Botão de Registrar foi pressionado.")
         self.delegate?.actionRegisterButton()
     }
     
