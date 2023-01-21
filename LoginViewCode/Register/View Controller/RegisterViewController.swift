@@ -18,7 +18,30 @@ class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.registerScreen?.delegate(delegate: self)
+        // Ou self.registerScreen?.delegate = self
+        self.registerScreen?.configTextFieldDelegate(delegate: self)
     }
+}
 
+extension RegisterViewController: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        print(#function)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        print(#function)
+    }
+}
+
+
+extension RegisterViewController: RegisterScreenProtocol {
+    func actionRegisterButton() {
+        print("Ok.")
+    }
 }
