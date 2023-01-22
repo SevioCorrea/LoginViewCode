@@ -33,16 +33,12 @@ class LoginViewController: UIViewController {  // AULA 2 39:35
 
 extension LoginViewController: UITextFieldDelegate {
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        print(#function)
-    }
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        print(#function)
+        self.loginScreen?.validaTextFields()
     }
     
     
