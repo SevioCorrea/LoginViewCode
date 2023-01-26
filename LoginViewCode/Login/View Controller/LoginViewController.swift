@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {  // AULA 2 39:35
+class LoginViewController: UIViewController {
     
     var loginScreen: LoginScreen?
     
