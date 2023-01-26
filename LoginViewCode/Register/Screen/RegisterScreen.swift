@@ -177,6 +177,7 @@ class RegisterScreen: UIView {
             make.centerX.equalToSuperview()
             make.width.equalTo(150)
             make.height.equalTo(150)
+//            make.height.width.equalTo(150)
         }
     }
     
