@@ -21,7 +21,7 @@ class RegisterScreen: UIView {
     func delegate(delegate: RegisterScreenProtocol?) {
         self.delegate = delegate
     }
-
+    
     lazy var backButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -98,7 +98,7 @@ class RegisterScreen: UIView {
     }
     
     private func configSuperView(){
-//        self.addSubview(self.backButton)
+        //        self.addSubview(self.backButton)
         self.addSubview(self.imageAddUser)
         self.addSubview(self.emailTextField)
         self.addSubview(self.passwordTextField)
@@ -127,7 +127,7 @@ class RegisterScreen: UIView {
         } else {
             self.configButtonEnable(false)
         }
-            
+        
     }
     
     /// // Apenas para setar quando o botão deve estar ativo ou não. Este Método não monitora o TextField. Será usado no Método que Monitora o TextField. É apenas para não poluir of ifs.
@@ -139,6 +139,14 @@ class RegisterScreen: UIView {
             self.registerButton.setTitleColor(.lightGray, for: .normal)
             self.registerButton.isEnabled = false
         }
+    }
+    
+    public func getEmail() -> String {
+        return self.emailTextField.text ?? ""
+    }
+    
+    public func getPassword() -> String {
+        return self.passwordTextField.text ?? ""
     }
     
     required init?(coder: NSCoder) {
