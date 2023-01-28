@@ -12,6 +12,7 @@ class LoginViewController: UIViewController {
     
     var loginScreen: LoginScreen?
     var auth: Auth?
+    var alert: Alert?
     
     override func loadView() {
         self.loginScreen = LoginScreen()
@@ -24,6 +25,7 @@ class LoginViewController: UIViewController {
         // Ou self.loginScreen?.delegate = self
         self.loginScreen?.configTextFieldDelegate(delegate: self)
         self.auth = Auth.auth()
+        self.alert = Alert(controller: self)
         
     }
     
@@ -58,14 +60,13 @@ extension LoginViewController: LoginScreenProtocol {
         self.auth?.signIn(withEmail: email, password: password, completion: { usuario, error in
             
             if error != nil {
-                print("Error ao logar: \(String(describing: error?.localizedDescription))")
-                print()
+                self.alert?.getAlert(titulo: "Atenção", mensagem: "\(String(describing: error!.localizedDescription))")
             } else {
                 
                 if usuario == nil {
-                    print("Tivemos um problema. Tente novamente mais tarde.")
+                    self.alert?.getAlert(titulo: "Atenção", mensagem: "Tivemos um problema. Tente novamente mais tarde.")
                 } else {
-                    print("Sucesso ao Logar.")
+                    self.alert?.getAlert(titulo: "Sucesso", mensagem: "Sucesso ao Logar.")
                 }
             }
         })
