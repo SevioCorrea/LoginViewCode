@@ -61,7 +61,12 @@ extension LoginViewController: LoginScreenProtocol {
                 print("Error ao logar: \(String(describing: error?.localizedDescription))")
                 print()
             } else {
-                print("Sucesso ao logar.")
+                
+                if usuario == nil {
+                    print("Tivemos um problema. Tente novamente mais tarde.")
+                } else {
+                    print("Sucesso ao Logar.")
+                }
             }
         })
         
