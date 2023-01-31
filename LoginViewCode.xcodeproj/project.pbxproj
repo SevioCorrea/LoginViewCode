@@ -18,6 +18,8 @@
 		22B464E82969C64500113A02 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B464E72969C64500113A02 /* LoginViewController.swift */; };
 		22B464ED2969C64600113A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B464EC2969C64600113A02 /* Assets.xcassets */; };
 		22B464F02969C64600113A02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B464EE2969C64600113A02 /* LaunchScreen.storyboard */; };
+		22BE08B52987F6C400A333CE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE08B42987F6C400A333CE /* HomeViewController.swift */; };
+		22BE08B72987F7B900A333CE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE08B62987F7B900A333CE /* HomeScreen.swift */; };
 		22C114292979AC5B008AE568 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C114282979AC5B008AE568 /* RegisterViewController.swift */; };
 		22C1142B2979B117008AE568 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1142A2979B117008AE568 /* RegisterScreen.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +35,8 @@
 		22B464EC2969C64600113A02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22B464EF2969C64600113A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22B464F12969C64600113A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22BE08B42987F6C400A333CE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		22BE08B62987F7B900A333CE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		22C114282979AC5B008AE568 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		22C1142A2979B117008AE568 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +107,7 @@
 		22B464E22969C64500113A02 /* LoginViewCode */ = {
 			isa = PBXGroup;
 			children = (
+				22BE08B12987F68200A333CE /* Home */,
 				2228EDF92985646C006D1B7D /* Alert */,
 				22C114232979AA9A008AE568 /* Register */,
 				2267C5AB296C8093006E1898 /* Login */,
@@ -114,6 +119,31 @@
 				2259BBF32983FA740098D01B /* GoogleService-Info.plist */,
 			);
 			path = LoginViewCode;
+			sourceTree = "<group>";
+		};
+		22BE08B12987F68200A333CE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				22BE08B32987F69F00A333CE /* Screen */,
+				22BE08B22987F68F00A333CE /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		22BE08B22987F68F00A333CE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22BE08B42987F6C400A333CE /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		22BE08B32987F69F00A333CE /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				22BE08B62987F7B900A333CE /* HomeScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 		22C114232979AA9A008AE568 /* Register */ = {
@@ -224,7 +254,9 @@
 				22C1142B2979B117008AE568 /* RegisterScreen.swift in Sources */,
 				22B464E82969C64500113A02 /* LoginViewController.swift in Sources */,
 				22C114292979AC5B008AE568 /* RegisterViewController.swift in Sources */,
+				22BE08B52987F6C400A333CE /* HomeViewController.swift in Sources */,
 				2267C5AF296C811C006E1898 /* LoginScreen.swift in Sources */,
+				22BE08B72987F7B900A333CE /* HomeScreen.swift in Sources */,
 				22B464E42969C64500113A02 /* AppDelegate.swift in Sources */,
 				22B464E62969C64500113A02 /* SceneDelegate.swift in Sources */,
 				2228EDFB29856488006D1B7D /* Alert.swift in Sources */,
