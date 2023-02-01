@@ -20,6 +20,13 @@ class HomeScreen: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.addSubView()
+        self.setUpConstraints()
+    }
+    
+    public func configTableViewProtocols(delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
+        
+        self.tableView.delegate = delegate
+        self.tableView.dataSource = dataSource
     }
     
     func addSubView() {
@@ -33,6 +40,10 @@ class HomeScreen: UIView {
     private func setUpConstraints() {
         NSLayoutConstraint.activate([
             
+            self.tableView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
+            self.tableView.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor),
+            self.tableView.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor),
+            self.tableView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor),
             
             
             
