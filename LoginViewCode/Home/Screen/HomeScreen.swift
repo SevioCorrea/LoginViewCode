@@ -19,6 +19,7 @@ class HomeScreen: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.configBackground()
         self.addSubView()
         self.setUpConstraints()
     }
@@ -27,6 +28,10 @@ class HomeScreen: UIView {
         
         self.tableView.delegate = delegate
         self.tableView.dataSource = dataSource
+    }
+    
+    private func configBackground() {
+        self.backgroundColor = UIColor(red: 24/255, green: 117/255, blue: 104/255, alpha: 1.0)
     }
     
     func addSubView() {

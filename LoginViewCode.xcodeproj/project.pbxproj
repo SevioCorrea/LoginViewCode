@@ -22,6 +22,7 @@
 		22BE08B72987F7B900A333CE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE08B62987F7B900A333CE /* HomeScreen.swift */; };
 		22C114292979AC5B008AE568 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C114282979AC5B008AE568 /* RegisterViewController.swift */; };
 		22C1142B2979B117008AE568 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1142A2979B117008AE568 /* RegisterScreen.swift */; };
+		22C51616299145F200D7911B /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C51615299145F200D7911B /* UserDetailTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		22BE08B62987F7B900A333CE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		22C114282979AC5B008AE568 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		22C1142A2979B117008AE568 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		22C51615299145F200D7911B /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		22BE08B12987F68200A333CE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				22C516142991450900D7911B /* Cell */,
 				22BE08B32987F69F00A333CE /* Screen */,
 				22BE08B22987F68F00A333CE /* ViewController */,
 			);
@@ -169,6 +172,14 @@
 				22C114282979AC5B008AE568 /* RegisterViewController.swift */,
 			);
 			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		22C516142991450900D7911B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				22C51615299145F200D7911B /* UserDetailTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 				22C114292979AC5B008AE568 /* RegisterViewController.swift in Sources */,
 				22BE08B52987F6C400A333CE /* HomeViewController.swift in Sources */,
 				2267C5AF296C811C006E1898 /* LoginScreen.swift in Sources */,
+				22C51616299145F200D7911B /* UserDetailTableViewCell.swift in Sources */,
 				22BE08B72987F7B900A333CE /* HomeScreen.swift in Sources */,
 				22B464E42969C64500113A02 /* AppDelegate.swift in Sources */,
 				22B464E62969C64500113A02 /* SceneDelegate.swift in Sources */,
