@@ -13,6 +13,7 @@
 		2259BBF72983FB520098D01B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2259BBF62983FB520098D01B /* FirebaseAuth */; };
 		2259BBF92983FB520098D01B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2259BBF82983FB520098D01B /* FirebaseFirestore */; };
 		2267C5AF296C811C006E1898 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267C5AE296C811C006E1898 /* LoginScreen.swift */; };
+		228D588629940F6D009D5C29 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228D588529940F6D009D5C29 /* DataUser.swift */; };
 		22B464E42969C64500113A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B464E32969C64500113A02 /* AppDelegate.swift */; };
 		22B464E62969C64500113A02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B464E52969C64500113A02 /* SceneDelegate.swift */; };
 		22B464E82969C64500113A02 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B464E72969C64500113A02 /* LoginViewController.swift */; };
@@ -29,6 +30,7 @@
 		2228EDFA29856488006D1B7D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		2259BBF32983FA740098D01B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2267C5AE296C811C006E1898 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		228D588529940F6D009D5C29 /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
 		22B464E02969C64500113A02 /* LoginViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B464E32969C64500113A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22B464E52969C64500113A02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		228D588429940F58009D5C29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				228D588529940F6D009D5C29 /* DataUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		22B464D72969C64500113A02 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +136,7 @@
 		22BE08B12987F68200A333CE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				228D588429940F58009D5C29 /* Model */,
 				22C516142991450900D7911B /* Cell */,
 				22BE08B32987F69F00A333CE /* Screen */,
 				22BE08B22987F68F00A333CE /* ViewController */,
@@ -266,6 +277,7 @@
 				22B464E82969C64500113A02 /* LoginViewController.swift in Sources */,
 				22C114292979AC5B008AE568 /* RegisterViewController.swift in Sources */,
 				22BE08B52987F6C400A333CE /* HomeViewController.swift in Sources */,
+				228D588629940F6D009D5C29 /* DataUser.swift in Sources */,
 				2267C5AF296C811C006E1898 /* LoginScreen.swift in Sources */,
 				22C51616299145F200D7911B /* UserDetailTableViewCell.swift in Sources */,
 				22BE08B72987F7B900A333CE /* HomeScreen.swift in Sources */,

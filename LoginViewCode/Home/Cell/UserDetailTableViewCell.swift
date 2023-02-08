@@ -31,6 +31,7 @@ class UserDetailTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.addSubview()
+        self.setupConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -40,6 +41,25 @@ class UserDetailTableViewCell: UITableViewCell {
     func addSubview() {
         self.contentView.addSubview(self.userImageView)
         self.contentView.addSubview(self.nameLabel)
+    }
+    
+    public func setupCell(data: DataUser) {
+        self.nameLabel.text = data.name
+        self.userImageView.image = UIImage(named: data.nameImage)
+    }
+    
+    private func setupConstraints() {
+        NSLayoutConstraint.activate([
+            
+            self.userImageView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            self.userImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 5),
+            self.userImageView.heightAnchor.constraint(equalToConstant: 80),
+            self.userImageView.widthAnchor.constraint(equalToConstant: 80),
+            
+            self.nameLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            self.nameLabel.leadingAnchor.constraint(equalTo: self.userImageView.trailingAnchor, constant: 20),
+            
+        ])
     }
     
 }
