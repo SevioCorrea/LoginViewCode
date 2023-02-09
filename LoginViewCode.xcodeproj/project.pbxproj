@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220B638929953BF800E64C73 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220B638829953BF800E64C73 /* UserDetailView.swift */; };
 		2228EDFB29856488006D1B7D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2228EDFA29856488006D1B7D /* Alert.swift */; };
 		225378CE297EDE0300E10E83 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 225378CD297EDE0300E10E83 /* SnapKit */; };
 		2259BBF42983FA740098D01B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2259BBF32983FA740098D01B /* GoogleService-Info.plist */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		220B638829953BF800E64C73 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		2228EDFA29856488006D1B7D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		2259BBF32983FA740098D01B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2267C5AE296C811C006E1898 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -59,6 +61,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		220B6384299533D900E64C73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		220B638729953BB800E64C73 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				220B638829953BF800E64C73 /* UserDetailView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		2228EDF92985646C006D1B7D /* Alert */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +122,7 @@
 			children = (
 				22B464E22969C64500113A02 /* LoginViewCode */,
 				22B464E12969C64500113A02 /* Products */,
+				220B6384299533D900E64C73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +206,7 @@
 		22C516142991450900D7911B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				220B638729953BB800E64C73 /* CustomView */,
 				22C51615299145F200D7911B /* UserDetailTableViewCell.swift */,
 			);
 			path = Cell;
@@ -277,6 +296,7 @@
 				22B464E82969C64500113A02 /* LoginViewController.swift in Sources */,
 				22C114292979AC5B008AE568 /* RegisterViewController.swift in Sources */,
 				22BE08B52987F6C400A333CE /* HomeViewController.swift in Sources */,
+				220B638929953BF800E64C73 /* UserDetailView.swift in Sources */,
 				228D588629940F6D009D5C29 /* DataUser.swift in Sources */,
 				2267C5AF296C811C006E1898 /* LoginScreen.swift in Sources */,
 				22C51616299145F200D7911B /* UserDetailTableViewCell.swift in Sources */,
