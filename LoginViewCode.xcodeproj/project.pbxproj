@@ -14,6 +14,8 @@
 		2259BBF72983FB520098D01B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2259BBF62983FB520098D01B /* FirebaseAuth */; };
 		2259BBF92983FB520098D01B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2259BBF82983FB520098D01B /* FirebaseFirestore */; };
 		2267C5AF296C811C006E1898 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267C5AE296C811C006E1898 /* LoginScreen.swift */; };
+		2284C6FA2997D2BC00AA85F8 /* SportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2284C6F92997D2BC00AA85F8 /* SportTableViewCell.swift */; };
+		2284C6FC2997D44F00AA85F8 /* SportTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2284C6FB2997D44F00AA85F8 /* SportTableViewCellScreen.swift */; };
 		228D588629940F6D009D5C29 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228D588529940F6D009D5C29 /* DataUser.swift */; };
 		22B464E42969C64500113A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B464E32969C64500113A02 /* AppDelegate.swift */; };
 		22B464E62969C64500113A02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B464E52969C64500113A02 /* SceneDelegate.swift */; };
@@ -32,6 +34,8 @@
 		2228EDFA29856488006D1B7D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		2259BBF32983FA740098D01B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2267C5AE296C811C006E1898 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		2284C6F92997D2BC00AA85F8 /* SportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCell.swift; sourceTree = "<group>"; };
+		2284C6FB2997D44F00AA85F8 /* SportTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCellScreen.swift; sourceTree = "<group>"; };
 		228D588529940F6D009D5C29 /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
 		22B464E02969C64500113A02 /* LoginViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B464E32969C64500113A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +111,31 @@
 				2267C5AE296C811C006E1898 /* LoginScreen.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		2284C6F72997D25000AA85F8 /* UserDetailTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				220B638729953BB800E64C73 /* CustomView */,
+			);
+			path = UserDetailTableViewCell;
+			sourceTree = "<group>";
+		};
+		2284C6F82997D29400AA85F8 /* SportTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2284C6FD2997D45900AA85F8 /* CustomView */,
+				2284C6F92997D2BC00AA85F8 /* SportTableViewCell.swift */,
+			);
+			path = SportTableViewCell;
+			sourceTree = "<group>";
+		};
+		2284C6FD2997D45900AA85F8 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				2284C6FB2997D44F00AA85F8 /* SportTableViewCellScreen.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		228D588429940F58009D5C29 /* Model */ = {
@@ -206,7 +235,8 @@
 		22C516142991450900D7911B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				220B638729953BB800E64C73 /* CustomView */,
+				2284C6F82997D29400AA85F8 /* SportTableViewCell */,
+				2284C6F72997D25000AA85F8 /* UserDetailTableViewCell */,
 				22C51615299145F200D7911B /* UserDetailTableViewCell.swift */,
 			);
 			path = Cell;
@@ -298,9 +328,11 @@
 				22BE08B52987F6C400A333CE /* HomeViewController.swift in Sources */,
 				220B638929953BF800E64C73 /* UserDetailView.swift in Sources */,
 				228D588629940F6D009D5C29 /* DataUser.swift in Sources */,
+				2284C6FC2997D44F00AA85F8 /* SportTableViewCellScreen.swift in Sources */,
 				2267C5AF296C811C006E1898 /* LoginScreen.swift in Sources */,
 				22C51616299145F200D7911B /* UserDetailTableViewCell.swift in Sources */,
 				22BE08B72987F7B900A333CE /* HomeScreen.swift in Sources */,
+				2284C6FA2997D2BC00AA85F8 /* SportTableViewCell.swift in Sources */,
 				22B464E42969C64500113A02 /* AppDelegate.swift in Sources */,
 				22B464E62969C64500113A02 /* SceneDelegate.swift in Sources */,
 				2228EDFB29856488006D1B7D /* Alert.swift in Sources */,
