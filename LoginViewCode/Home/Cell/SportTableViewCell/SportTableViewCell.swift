@@ -47,6 +47,7 @@ extension SportTableViewCell: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell: SportCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: SportCollectionViewCell.identifier, for: indexPath) as? SportCollectionViewCell
+        cell?.setupCell(data: Sport(name: "Natação", nameImage: "natacao"))
         
         return cell ?? UICollectionViewCell()
     }
