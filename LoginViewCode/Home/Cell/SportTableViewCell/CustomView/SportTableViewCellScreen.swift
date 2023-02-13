@@ -13,7 +13,6 @@ class SportTableViewCellScreen: UIView {
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewLayout.init())
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.backgroundColor = .blue
         collectionView.delaysContentTouches = false
         collectionView.register(SportCollectionViewCell.self, forCellWithReuseIdentifier: SportCollectionViewCell.identifier)
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout.init()

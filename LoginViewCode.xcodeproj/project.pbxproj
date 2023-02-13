@@ -12,6 +12,7 @@
 		225378CE297EDE0300E10E83 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 225378CD297EDE0300E10E83 /* SnapKit */; };
 		22544F492999608E0062BB73 /* SportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22544F482999608E0062BB73 /* SportCollectionViewCell.swift */; };
 		22544F4B299961380062BB73 /* SportCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22544F4A299961380062BB73 /* SportCollectionViewCellScreen.swift */; };
+		225665BE299A8E6400AC0091 /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225665BD299A8E6400AC0091 /* Sport.swift */; };
 		2259BBF42983FA740098D01B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2259BBF32983FA740098D01B /* GoogleService-Info.plist */; };
 		2259BBF72983FB520098D01B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2259BBF62983FB520098D01B /* FirebaseAuth */; };
 		2259BBF92983FB520098D01B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2259BBF82983FB520098D01B /* FirebaseFirestore */; };
@@ -36,6 +37,7 @@
 		2228EDFA29856488006D1B7D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		22544F482999608E0062BB73 /* SportCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportCollectionViewCell.swift; sourceTree = "<group>"; };
 		22544F4A299961380062BB73 /* SportCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportCollectionViewCellScreen.swift; sourceTree = "<group>"; };
+		225665BD299A8E6400AC0091 /* Sport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
 		2259BBF32983FA740098D01B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2267C5AE296C811C006E1898 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		2284C6F92997D2BC00AA85F8 /* SportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCell.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				228D588529940F6D009D5C29 /* DataUser.swift */,
+				225665BD299A8E6400AC0091 /* Sport.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				22C114292979AC5B008AE568 /* RegisterViewController.swift in Sources */,
 				22544F492999608E0062BB73 /* SportCollectionViewCell.swift in Sources */,
 				22BE08B52987F6C400A333CE /* HomeViewController.swift in Sources */,
+				225665BE299A8E6400AC0091 /* Sport.swift in Sources */,
 				22544F4B299961380062BB73 /* SportCollectionViewCellScreen.swift in Sources */,
 				220B638929953BF800E64C73 /* UserDetailView.swift in Sources */,
 				228D588629940F6D009D5C29 /* DataUser.swift in Sources */,
