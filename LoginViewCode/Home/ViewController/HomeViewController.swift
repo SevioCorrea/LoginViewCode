@@ -15,6 +15,12 @@ class HomeViewController: UIViewController {
                                 DataUser(name: "Pessoa3", nameImage: "pessoa3")
                                  ]
     
+    var dataSport: [Sport] = [Sport(name: "Corrida", nameImage: "corrida"),
+                              Sport(name: "Natação", nameImage: "natacao"),
+                              Sport(name: "Futebol", nameImage: "futebol"),
+                              Sport(name: "Yoga", nameImage: "yoga")
+                                ]
+    
     override func loadView() {
         self.homeScreen = HomeScreen()
         self.view = homeScreen
@@ -38,6 +44,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         if indexPath.row == 3 {
             let cell: SportTableViewCell? = tableView.dequeueReusableCell(withIdentifier: SportTableViewCell.identifier, for: indexPath) as? SportTableViewCell
+            cell?.dataCollection(data: self.dataSport)
             return cell ?? UITableViewCell()
         }
         
