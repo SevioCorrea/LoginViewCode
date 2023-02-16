@@ -55,24 +55,24 @@ extension LoginViewController: LoginScreenProtocol {
         let vc: HomeViewController = HomeViewController()
         self.navigationController?.pushViewController(vc, animated: true)
         
-//        guard let login = self.loginScreen else { return }
-//
-//        let email: String = login.getEmail()
-//        let password: String = login.getPassword()
-//
-//        self.auth?.signIn(withEmail: email, password: password, completion: { usuario, error in
-//
-//            if error != nil {
-//                self.alert?.getAlert(titulo: "Atenção", mensagem: "\(String(describing: error!.localizedDescription))")
-//            } else {
-//
-//                if usuario == nil {
-//                    self.alert?.getAlert(titulo: "Atenção", mensagem: "Tivemos um problema. Tente novamente mais tarde.")
-//                } else {
-//                    self.alert?.getAlert(titulo: "Sucesso", mensagem: "Sucesso ao Logar.")
-//                }
-//            }
-//        })
+        guard let login = self.loginScreen else { return }
+
+        let email: String = login.getEmail()
+        let password: String = login.getPassword()
+
+        self.auth?.signIn(withEmail: email, password: password, completion: { usuario, error in
+
+            if error != nil {
+                self.alert?.getAlert(titulo: "Atenção", mensagem: "\(String(describing: error!.localizedDescription))")
+            } else {
+
+                if usuario == nil {
+                    self.alert?.getAlert(titulo: "Atenção", mensagem: "Tivemos um problema. Tente novamente mais tarde.")
+                } else {
+                    self.alert?.getAlert(titulo: "Sucesso", mensagem: "Sucesso ao Logar.")
+                }
+            }
+        })
         
     }
     
